@@ -1,0 +1,24 @@
+// SUBSCRIPTION SECTION SUBSCRIPTION SECTION
+.subscription {
+	margin:60px 0;
+	.sectionTitleContent {
+		padding:0 25%;
+		margin:25px 0 5% 0;
+	}
+	form {
+		#email {
+			visibility: hidden;
+		}
+		input {
+			border:0 solid lightgrey;
+			border-bottom:1px solid lightgrey;
+			color:lightgrey;
+			padding:8px;
+			width:72%;
+			background:url(../assets/letter.png) no-repeat;
+			background-position:right;
+			background-size:25px;
+		}
+	}
+}
+// SUBSCRIPTION SECTION ENDS SUBSCRIPTION SECTION ENDS

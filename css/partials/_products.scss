@@ -1,0 +1,154 @@
+// PRODUCTS SECTION PRODUCTS SECTION PRODUCTS SECTION
+.products {
+	margin-top:65px;
+}
+
+.sectionTitle--divider h2::after {
+	content:"";
+	background:linear-gradient(to right, $primaryColor 0%, $primaryColor 33%, lightgrey 33%, lightgrey 66%, $primaryColor 66%, $primaryColor 100%);
+	width: 120px;
+	height: 2px;
+	display:block;
+	margin:0 auto;
+	margin-top:15px;
+}
+
+.products ul {
+	display:flex;
+	justify-content:center;
+	padding:0;
+	margin:0;
+	li {
+		list-style: none;
+		margin:30px;
+		&:hover {
+			border-bottom:1px solid black;
+		}
+		a {
+			text-decoration: none;
+			color:black;
+			font-size:1.1rem;
+		}
+	}
+}
+
+.products .gallery {
+	flex-wrap:wrap;
+	justify-content:center;
+}
+
+.gallery__product {
+	margin:12px;
+	img {
+		display:block;
+	}
+}
+
+figure {
+	position:relative;
+	.gallery__product__feature {
+		text-align:right;
+		position:absolute;
+		top:0;
+		right:0;
+		padding:10px;
+		z-index:2;
+		.feature {
+			width: 40px;
+			height: 20px;
+			border-radius: 10px;
+			text-align:center;
+			font-size:0.7rem;
+			color:white;
+			line-height:23px;
+			margin:0;
+		}
+		.hotProduct {
+			background-color: #ff9a9e;
+			margin-bottom:5px;
+		}
+		.newProduct {
+			background-color: #79dad6;
+		}
+		.discountedProduct {
+			background-color:#f6b895;
+		}
+	}
+}
+
+.overlay--products {
+	opacity:0;
+	transition:all 0.3s;
+	.addToCart {
+		width: 120px;
+		height: 40px;
+		font-size:0.8rem;
+		text-transform: uppercase;
+		background:white;
+		color:grey;
+		border:0 solid black;
+		position:absolute;
+		bottom:40%;
+		left:50px;
+		padding-top: 5px;
+		transition:all 0.2s;
+	}
+	.likeAndWatch a {
+		background-color: rgba(26, 26, 38, 0.8);
+		width: 105px;
+		height: 40px;
+		font-size:1rem;
+		padding:7px;
+		color: white;
+		position:absolute;
+		bottom: 0;
+		transition:all 0.3s;
+	}
+	.likeAndWatch .like {
+		left:0;
+		border-right:1px solid grey;
+	}
+	.likeAndWatch .watch {
+		right:0;
+	}
+}
+
+figure:hover .overlay--products {
+	opacity:1;
+	background:rgba(0,0,0,0.5);
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	.addToCart:hover {
+		color:white;
+		background:#79dad6;
+		transform:scale(0.97);
+	}
+	.likeAndWatch a:hover {
+			color:$secondaryColor;
+			padding-top:3px;
+		}
+}
+
+figcaption {
+	a {
+		text-decoration: none;
+		.productName {
+			margin: 0;
+			margin-top:10px;
+			color:black;
+		}
+	}
+	.price {
+		font-size:1.1rem;
+		margin-top:5px;
+		.originalPrice {
+			text-decoration:line-through;
+			color:grey;
+			font-size:0.9rem;
+		}
+	}
+}
+// PRODUCTS SECTION ENDS PRODUCTS SECTION ENDS

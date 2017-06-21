@@ -1,0 +1,183 @@
+// FOOTER FOOTER FOOTER FOOTER FOOTER FOOTER
+footer {
+	text-align:left;
+	color:grey;
+	.wrapper {
+		display:flex;
+		padding:4% 0;
+		.icon a {
+			margin:2.2%;
+			font-size:1.5rem;
+			&:first-child {
+				margin-left:0;
+				padding-left:0;
+			}
+		}
+	}
+
+	h3 {
+		margin-top:6px;
+	}
+	h3::after {
+		content:"";
+		background-color:$primaryColor;
+		width: 40px;
+		height: 2px;
+		display:block;
+		margin-top:10px;
+		margin-bottom:32px;
+	}
+}
+
+.logo {
+	padding-right:13%;
+	padding-top:10px;
+}
+
+.footer__container {
+	margin-right:2%;
+	&:last-child {
+		margin-right:0;
+	}
+}
+
+.footer__container--contact {
+	width:58%;
+}
+
+.footer__container--services, .footer__container--account {
+	width:20%;
+}
+
+.footer__container--instagram {
+	width:35%;
+}
+
+.sectionTitleContent--footer {
+	margin-top:35px;
+	margin-bottom:40px;
+}
+
+.contact__item--title {
+	color:black;
+	font-weight:600;
+}
+
+.services, .account {
+	display:flex;
+	flex-direction:column;
+	a {
+		color:grey;
+		text-decoration: none;
+		line-height: 33px;
+		&:hover {
+		color:black;
+		text-decoration: underline;
+		}
+	}
+}
+
+.services a:nth-child(4) {
+	font-size:0.8rem;
+}
+
+.instagram {
+	margin-bottom:30px;
+	a {
+		margin:2px;
+	}
+}
+
+.paymentMethod img {
+	margin-right:10px;
+}
+
+.copyrightWrapper {
+	max-width:1170px;
+	margin:0 auto;
+	padding:0.8% 0;
+}
+
+.copyright {
+	display:flex;
+	justify-content: space-between;
+	color:grey;
+	width:100%;
+	.emphasize {
+		color:black;
+	}
+}
+// FOOTER ENDS FOOTER ENDS FOOTER ENDS FOOTER ENDS
+
+@media (max-width:1210px){
+	footer .wrapper {
+		padding:4% 2%;
+	}
+	.footer__container--contact {
+		width:40%;
+	}
+	.copyrightWrapper {
+		padding:0.8% 5%;
+	}
+}
+
+@media (max-width:1050px){
+	footer .wrapper {
+		flex-wrap:wrap;
+		padding:8%;
+	}
+	.footer__container {
+		margin-right:5%;
+		&:nth-child(3) {
+			margin-right:0;
+		}
+	}
+	.footer__container--services, .footer__container--account {
+		width:25%;
+	}
+	.footer__container--instagram {
+		width:100%;
+		margin-top:50px;
+	}
+}
+
+@media (max-width:760px) {
+	footer .wrapper {
+		flex-wrap:wrap;
+		padding:8% 15%;
+	}
+	.footer__container{
+		width:100%;
+		margin-top:50px;
+		margin-right:10%;
+		&:nth-child(3) {
+			margin-right:0;
+		}
+	}
+	.footer__container--services, .footer__container--account {
+		width:30%;
+	}
+	.footer__container--instagram {
+		width:60%;
+	}
+	.copyrightWrapper .copyright {
+		flex-wrap:wrap;
+		justify-content:center;
+		padding-bottom:20px;
+		p {
+			margin:0;
+		}
+	}
+}
+
+@media (max-width:500px) {
+	footer .wrapper {
+		padding:8% 0 8% 13%;
+	}
+	.footer__container--services, .footer__container--account {
+		width:40%;
+	}
+	.footer__container--instagram {
+		width:80%;
+	}
+}

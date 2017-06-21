@@ -1,0 +1,43 @@
+// BLOG SECTION BLOG SECTION BLOG SECTION BLOG SECTION
+.blog {
+	margin-top:80px;
+}
+
+.blog__container {
+	text-align:left;
+	display:flex;
+	margin-top: 30px;
+	.blog__container__entry{
+		margin:15px;
+		a {
+			color:black;
+			&:hover {
+				color:grey;
+			}
+			img {
+				width:100%;
+			}
+		}
+		.date {
+			color:grey;
+			margin:7px 0;
+		}
+		.blogTitle {
+			text-decoration: none;
+			h4 {
+				margin-top:0
+			}
+		}
+	}
+}
+// BLOG SECTION ENDS BLOG SECTION ENDS BLOG SECTION ENDS
+
+
+@media (max-width: 720px) {
+	.blog__container {
+		flex-direction:column;
+		.blog__container__entry{
+			margin:5% 20%;
+		}
+	}
+}

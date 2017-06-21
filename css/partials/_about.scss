@@ -1,0 +1,151 @@
+// ABOUT SECTION ABOUT SECTION ABOUT SECTION ABOUT SECTION
+.about {
+	margin-top:110px;
+}
+
+.about .sectionTitle {
+	background:url(../assets/leaf.png) no-repeat center;
+
+	.sectionTitle__start {
+		color: $primaryColor;
+		font-size: 1.2rem;
+		letter-spacing: 1px;
+		margin:0;
+	}
+}
+
+.sectionTitleContent {
+	color:grey;
+	padding:0 17%;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+
+.designer {
+	text-transform: uppercase;
+	font-size:1rem;
+	font-weight: 500;
+	margin-bottom:80px;
+	span {
+		text-transform: capitalize;
+		font-style: italic;
+		color:grey;
+	}
+}
+
+.gallery {
+	display:flex;
+}
+
+.gallery__container--right {
+	width:calc(65% - 60px);
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.gallery__container--left {
+	width:calc(45.3% - 30px);
+}
+
+.gallery__container__category {
+	position:relative;
+	margin:15px;
+	 a {
+		text-decoration: none;
+		img {
+			display:block;
+			width:100%;
+			transition:all 0.3s;
+		}
+		.categoryTag {
+			background:white;
+			margin:0 auto;
+			padding:15px 30px;
+			position:absolute;
+			transition:all 0.3s;
+		}
+		.categoryTag--1 {
+			top:40%;
+			left:32%;
+		}
+		.categoryTag--2, .categoryTag--3 {
+			top:33%;
+			left:17%;
+		}
+		.categoryTag--4 {
+			top:32%;
+			left:30%;
+		}
+		h3 {
+			color:black;
+			margin:0;
+		}
+		.itemQuantity {
+			color:grey;
+			font-size:1rem;
+			margin:0;
+		}
+	}
+}
+
+.gallery__container__category:hover {
+	img {
+		transform:scale(1.06);
+			}
+	.categoryTag {
+		border:4px solid black;
+	}
+}
+
+.gallery__container__category--2, .gallery__container__category--3 {
+	width: calc(50% - 30px);
+}
+// ABOUT SECTION ENDS ABOUT SECTION ENDS ABOUT SECTION ENDS
+
+
+@media (max-width: 1145px) {
+	.about .gallery {
+		flex-direction:column;
+		align-content:center;
+		padding:0 30%;
+	}
+	.gallery__container--left, .gallery__container--right, 
+	.gallery__container__category--2, 
+	.gallery__container__category--3, 
+	.gallery__container__category--4 {
+		width:100%;
+	}
+	.gallery__container__category {
+		 a {
+			.categoryTag--1 {
+				top:5px;
+				left:5px;
+			}
+			.categoryTag--2, .categoryTag--3 {
+				top:5px;
+				left:5px;
+			}
+			.categoryTag--4 {
+				top:5px;
+				left:5px;
+			}
+		}
+	}
+}
+
+@media (max-width: 950px) {
+	.about .gallery {
+		padding:0 20%;
+	}
+}
+
+@media (max-width: 700px) {
+	.about .gallery {
+		padding:0 15%;
+	}
+	.gallery__container__category {
+		a .categoryTag h3 {
+			font-size:1rem;
+		}
+	}
+}

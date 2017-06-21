@@ -1,0 +1,21 @@
+// PARTNERS SECTION PARTNERS SECTION PARTNERS SECTION
+.partners {
+	.wrapper {
+		margin-bottom:60px;
+	}
+	img {
+		margin:2.5%;
+	}
+	img:first-child {
+		margin-left:0;
+	}
+	img:last-child {
+		margin-right:0;
+	}
+	.partners__logo a {
+		img:hover {
+			transform:translate(0,-20px)
+		}
+	}
+}
+// PARTNERS SECTION ENDS PARTNERS SECTION ENDS
